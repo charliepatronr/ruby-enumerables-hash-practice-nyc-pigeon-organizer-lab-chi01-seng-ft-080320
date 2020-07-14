@@ -31,10 +31,16 @@ def nyc_pigeon_organizer(data)
     ##loops through inner hash value (ex purple is the key, [with names] is the value
     outer_value.each do |key, value|
       
+      #loops through each inner array value which in this case is the individual name for each pidgeon
       value.each do |inner_key|
+        
+        #here we assing the inner name as the final hash key if it does not exists and create and mepty hash for it 
+        
         if (!final_hash[inner_key])
             final_hash[inner_key] = {}
           end 
+          
+          #Validates that the inner_key (in this case name of the pidgeon) does not have the outer most key which is color, gender or lives we assing a value of an empty array
           if(!final_hash[inner_key][outer_key])
             final_hash[inner_key][outer_key] = []
           end 
