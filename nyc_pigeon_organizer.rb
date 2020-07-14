@@ -31,7 +31,7 @@ def nyc_pigeon_organizer(data)
             final_hash[inner_key] = {}
           end 
           if(!final_hash[inner_key][outer_key])
-            final_hash[inner_key][outer_key] = [key]
+            final_hash[inner_key][outer_key] = [key.to_s]
           end 
       end 
 
