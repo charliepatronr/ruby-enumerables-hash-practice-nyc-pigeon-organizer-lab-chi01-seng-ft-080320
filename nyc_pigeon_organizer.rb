@@ -24,11 +24,11 @@ pigeon_data = {
 
 def nyc_pigeon_organizer(data)
 
-  ## Loops through outer most key and values, creates a final_hash accumulator 
+  ## Loops through outer most key ex. color (key) and values ex (purple) , creates a final_hash accumulator 
   
   result = data.each_with_object({}) do |(outer_key, outer_value), final_hash|
     
-    ##loops through inner hash ex. color (key) value (purple) still a hash
+    ##loops through inner hash value (ex purple is the key, [with names ] is the value still a hash
     outer_value.each do |key, value|
       
       value.each do |inner_key|
