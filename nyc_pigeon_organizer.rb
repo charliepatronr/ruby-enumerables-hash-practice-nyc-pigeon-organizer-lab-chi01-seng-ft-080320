@@ -44,7 +44,7 @@ def nyc_pigeon_organizer(data)
           if(!final_hash[inner_key][outer_key])
             final_hash[inner_key][outer_key] = []
           end 
-          ##After the hash with pidegon name as key and either color gender or lives as value with a respetive array we push the key value which  
+          ##After the hash with pidegon name as key and either color gender or lives as value is created with a respetive array we push() the key value which is either the individual color gender, or place the pidgeon lives 
           final_hash[inner_key][outer_key].push(key.to_s)
       end 
 
